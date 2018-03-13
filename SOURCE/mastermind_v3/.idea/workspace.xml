@@ -44,7 +44,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jeu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Jeu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Jeu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2978">
@@ -52,6 +52,110 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="1386.0" y="1363.0">com</node>
+                <node x="649.0" y="1363.0">Action</node>
+                <node x="445.0" y="1363.0">netscape</node>
+                <node x="483.0" y="640.5">SignUpAction</node>
+                <node x="296.0" y="695.0">PlayerVsIA</node>
+                <node x="340.0" y="1471.0">sun</node>
+                <node x="288.0" y="957.0">PlayerDao</node>
+                <node x="0.0" y="1471.0">java</node>
+                <node x="1207.0" y="1363.0">javax</node>
+                <node x="1023.0" y="1363.0">javafx</node>
+                <node x="335.0" y="1200.0">Context</node>
+                <node x="622.0" y="871.0">Player</node>
+                <node x="837.0" y="1363.0">oracle</node>
+                <node x="172.0" y="1471.0">org</node>
+                <node x="1174.0" y="1200.0">Guess</node>
+                <node x="946.0" y="640.5">ShowPlayerInfoAction</node>
+                <node x="944.0" y="871.0">MysqlConnection</node>
+                <node x="0.0" y="970.5">GameDao</node>
+                <node x="233.0" y="1363.0">META-INF</node>
+                <node x="507.0" y="1471.0">jdk</node>
+                <node x="759.0" y="695.0">IAVsPlayer</node>
+                <node x="899.0" y="1200.0">Secret</node>
+                <node x="217.25" y="871.0">DAO</node>
+                <node x="1232.0" y="871.0">Game</node>
+                <node x="527.5" y="514.0">Strategy</node>
+                <node x="575.0" y="1200.0">DAOFactory</node>
+                <node x="0.0" y="0.0">Jeu</node>
+                <node x="0.0" y="627.0">LoginAction</node>
+                <node x="0.0" y="1363.0">Main</node>
+                <node x="0.0" y="1200.0">Interface</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="GameDao" target="DAO">
+                  <point x="0.0" y="-85.5" />
+                  <point x="134.0" y="932.0" />
+                  <point x="250.25" y="932.0" />
+                  <point x="-33.0" y="18.0" />
+                </edge>
+                <edge source="IAVsPlayer" target="Strategy">
+                  <point x="0.0" y="-31.5" />
+                  <point x="842.5" y="607.0" />
+                  <point x="644.4" y="607.0" />
+                  <point x="33.39999999999998" y="31.5" />
+                </edge>
+                <edge source="PlayerVsIA" target="Strategy">
+                  <point x="0.0" y="-31.5" />
+                  <point x="379.5" y="607.0" />
+                  <point x="577.6" y="607.0" />
+                  <point x="-33.39999999999998" y="31.5" />
+                </edge>
+                <edge source="PlayerDao" target="DAO">
+                  <point x="0.0" y="-99.0" />
+                  <point x="432.5" y="932.0" />
+                  <point x="316.25" y="932.0" />
+                  <point x="33.0" y="18.0" />
+                </edge>
+                <edge source="ShowPlayerInfoAction" target="Strategy">
+                  <point x="0.0" y="-86.0" />
+                  <point x="1060.0" y="597.0" />
+                  <point x="677.8" y="597.0" />
+                  <point x="66.79999999999995" y="31.5" />
+                </edge>
+                <edge source="LoginAction" target="Strategy">
+                  <point x="0.0" y="-99.5" />
+                  <point x="138.0" y="597.0" />
+                  <point x="544.2" y="597.0" />
+                  <point x="-66.79999999999995" y="31.5" />
+                </edge>
+                <edge source="SignUpAction" target="Strategy">
+                  <point x="0.0" y="-86.0" />
+                  <point x="0.0" y="31.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-161.78571428571416" y="710.8571428571429" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,10 +267,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="-9" />
-    <option name="width" value="1860" />
-    <option name="height" value="1098" />
+    <option name="x" value="-61" />
+    <option name="y" value="57" />
+    <option name="width" value="1140" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -208,6 +312,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mastermind_v3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mastermind_v3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TEST" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,15 +777,15 @@
       <workItem from="1520868180349" duration="2499000" />
       <workItem from="1520930833375" duration="5851000" />
       <workItem from="1520937795086" duration="5000" />
-      <workItem from="1520939512934" duration="5000" />
+      <workItem from="1520939512934" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96885000" />
+    <option name="totallyTimeSpent" value="98101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="-9" width="1860" height="1098" extended-state="6" />
+    <frame x="-61" y="57" width="1140" height="1092" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -676,8 +802,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298647" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14929424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17263843" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24509804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17263843" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -718,7 +844,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Context.java" />
     <entry file="file://$PROJECT_DIR$/src/Strategy/OperationGame.java" />
     <entry file="file://$PROJECT_DIR$/src/Strategy/OperationDisplayStats.java" />
     <entry file="file://$PROJECT_DIR$/src/Strategy/OperationDisplayProfile.java" />
@@ -789,99 +914,6 @@
     <entry file="file://$PROJECT_DIR$/src/Mastermind.uml" />
     <entry file="file://$PROJECT_DIR$/src/diagram_masterming.png" />
     <entry file="file://$PROJECT_DIR$/src/GameDaoImpl.java" />
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="540.0" y="1306.0">com</node>
-            <node x="832.0" y="1170.0">Action</node>
-            <node x="628.0" y="1170.0">netscape</node>
-            <node x="561.0" y="845.0">PlayerVsIA</node>
-            <node x="631.0" y="1039.0">GameDaoImpl</node>
-            <node x="1054.0" y="1306.0">sun</node>
-            <node x="960.0" y="732.0">PlayerDao</node>
-            <node x="714.0" y="1306.0">java</node>
-            <node x="748.0" y="845.0">Inscription</node>
-            <node x="184.0" y="1306.0">javax</node>
-            <node x="0.0" y="1306.0">javafx</node>
-            <node x="374.0" y="845.0">ShowPlayerInfo</node>
-            <node x="814.0" y="953.0">Context</node>
-            <node x="0.0" y="434.0">Player</node>
-            <node x="1020.0" y="1170.0">oracle</node>
-            <node x="886.0" y="1306.0">org</node>
-            <node x="960.0" y="845.0">PlayerDaoImpl</node>
-            <node x="1074.0" y="953.0">Guess</node>
-            <node x="0.0" y="0.0">MysqlConnection</node>
-            <node x="646.0" y="953.0">GameDao</node>
-            <node x="416.0" y="1170.0">META-INF</node>
-            <node x="0.0" y="1387.0">jdk</node>
-            <node x="187.0" y="845.0">IAVsPlayer</node>
-            <node x="0.0" y="1170.0">Secret</node>
-            <node x="363.0" y="1306.0">DAO</node>
-            <node x="0.0" y="953.0">Game</node>
-            <node x="374.0" y="732.0">Strategy</node>
-            <node x="0.0" y="845.0">Authentification</node>
-            <node x="408.0" y="0.0">Jeu</node>
-            <node x="183.0" y="1170.0">Main</node>
-            <node x="391.0" y="953.0">Interface</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="IAVsPlayer" target="Strategy">
-              <point x="0.0" y="-31.5" />
-              <point x="270.5" y="825.0" />
-              <point x="424.1" y="825.0" />
-              <point x="-33.39999999999998" y="31.5" />
-            </edge>
-            <edge source="PlayerVsIA" target="Strategy">
-              <point x="0.0" y="-31.5" />
-              <point x="644.5" y="825.0" />
-              <point x="490.90000000000003" y="825.0" />
-              <point x="33.400000000000034" y="31.5" />
-            </edge>
-            <edge source="ShowPlayerInfo" target="Strategy">
-              <point x="0.0" y="-31.5" />
-              <point x="0.0" y="31.5" />
-            </edge>
-            <edge source="Inscription" target="Strategy">
-              <point x="0.0" y="-31.5" />
-              <point x="831.5" y="815.0" />
-              <point x="524.3" y="815.0" />
-              <point x="66.79999999999995" y="31.5" />
-            </edge>
-            <edge source="PlayerDaoImpl" target="PlayerDao">
-              <point x="0.0" y="-31.5" />
-              <point x="0.0" y="31.5" />
-            </edge>
-            <edge source="Authentification" target="Strategy">
-              <point x="0.0" y="-31.5" />
-              <point x="83.5" y="815.0" />
-              <point x="390.7" y="815.0" />
-              <point x="-66.80000000000001" y="31.5" />
-            </edge>
-            <edge source="GameDaoImpl" target="GameDao">
-              <point x="0.0" y="-18.0" />
-              <point x="0.0" y="18.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="3.0" y="240.0" />
-          <SelectedNodes>
-            <node>MysqlConnection</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlayerDaoImpl.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/net/URLClassLoader.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -976,13 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -1055,6 +1080,124 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-mastermind_v3">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-mastermind_v3</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">mdl-mastermind_v3</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-283.0" y="-1829.0" />
+          <SelectedNodes>
+            <node>mdl-mastermind_v3</node>
+          </SelectedNodes>
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="1386.0" y="1363.0">com</node>
+            <node x="649.0" y="1363.0">Action</node>
+            <node x="445.0" y="1363.0">netscape</node>
+            <node x="483.0" y="640.5">SignUpAction</node>
+            <node x="296.0" y="695.0">PlayerVsIA</node>
+            <node x="340.0" y="1471.0">sun</node>
+            <node x="288.0" y="957.0">PlayerDao</node>
+            <node x="0.0" y="1471.0">java</node>
+            <node x="1207.0" y="1363.0">javax</node>
+            <node x="1023.0" y="1363.0">javafx</node>
+            <node x="335.0" y="1200.0">Context</node>
+            <node x="622.0" y="871.0">Player</node>
+            <node x="837.0" y="1363.0">oracle</node>
+            <node x="172.0" y="1471.0">org</node>
+            <node x="1174.0" y="1200.0">Guess</node>
+            <node x="946.0" y="640.5">ShowPlayerInfoAction</node>
+            <node x="944.0" y="871.0">MysqlConnection</node>
+            <node x="0.0" y="970.5">GameDao</node>
+            <node x="233.0" y="1363.0">META-INF</node>
+            <node x="507.0" y="1471.0">jdk</node>
+            <node x="759.0" y="695.0">IAVsPlayer</node>
+            <node x="899.0" y="1200.0">Secret</node>
+            <node x="217.25" y="871.0">DAO</node>
+            <node x="1232.0" y="871.0">Game</node>
+            <node x="527.5" y="514.0">Strategy</node>
+            <node x="575.0" y="1200.0">DAOFactory</node>
+            <node x="0.0" y="0.0">Jeu</node>
+            <node x="0.0" y="627.0">LoginAction</node>
+            <node x="0.0" y="1363.0">Main</node>
+            <node x="0.0" y="1200.0">Interface</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="GameDao" target="DAO">
+              <point x="0.0" y="-85.5" />
+              <point x="134.0" y="932.0" />
+              <point x="250.25" y="932.0" />
+              <point x="-33.0" y="18.0" />
+            </edge>
+            <edge source="IAVsPlayer" target="Strategy">
+              <point x="0.0" y="-31.5" />
+              <point x="842.5" y="607.0" />
+              <point x="644.4" y="607.0" />
+              <point x="33.39999999999998" y="31.5" />
+            </edge>
+            <edge source="PlayerVsIA" target="Strategy">
+              <point x="0.0" y="-31.5" />
+              <point x="379.5" y="607.0" />
+              <point x="577.6" y="607.0" />
+              <point x="-33.39999999999998" y="31.5" />
+            </edge>
+            <edge source="PlayerDao" target="DAO">
+              <point x="0.0" y="-99.0" />
+              <point x="432.5" y="932.0" />
+              <point x="316.25" y="932.0" />
+              <point x="33.0" y="18.0" />
+            </edge>
+            <edge source="ShowPlayerInfoAction" target="Strategy">
+              <point x="0.0" y="-86.0" />
+              <point x="1060.0" y="597.0" />
+              <point x="677.8" y="597.0" />
+              <point x="66.79999999999995" y="31.5" />
+            </edge>
+            <edge source="LoginAction" target="Strategy">
+              <point x="0.0" y="-99.5" />
+              <point x="138.0" y="597.0" />
+              <point x="544.2" y="597.0" />
+              <point x="-66.79999999999995" y="31.5" />
+            </edge>
+            <edge source="SignUpAction" target="Strategy">
+              <point x="0.0" y="-86.0" />
+              <point x="0.0" y="31.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-161.78571428571416" y="710.8571428571429" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
