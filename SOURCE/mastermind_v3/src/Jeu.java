@@ -21,6 +21,9 @@ public class Jeu {
         this.console = new Interface();
     }
 
+    /**
+     * Construit et déroule une partie de Jeu 1
+     */
     public void makeGuess() {
         while (this.nbTours < 11) {
             if (this.win.equals(false)) {
@@ -31,6 +34,11 @@ public class Jeu {
             }
         }
     }
+
+    /**
+     * Construit et coordonne le déroulement d'une partie de jeu où l'IA tente de deviner la combinaison (Jeu 2)
+     *
+     */
     public void iaGuess() {
         String combinaison;
 
@@ -45,6 +53,7 @@ public class Jeu {
             }
             if (nbTours < 11) {
                 sortPossibilities(possibilities, result, possibilities.get(0));
+
                 combinaison = possibilities.get(0);
                 console.displayMessage(combinaison);
                 inputBpMp();
@@ -53,6 +62,9 @@ public class Jeu {
         }
     }
 
+    /**
+     * Récupère les entrées utilisateur et les stockes dans le tableau "result"
+     */
     public void inputBpMp() {
         String message;
         result.clear();
@@ -64,6 +76,15 @@ public class Jeu {
         result.add(console.getUserInput());
     }
 
+    /**
+     * Compare la combinaison secrète avec la combinaison jouée par le joueur
+     * @param secret
+     *          La combinaison secrète que le joueur tente de deviner
+     * @param guess
+     *          La combinaison jouée par le joueur
+     * @return
+     *          Le tableau des résultats contenant les BP et MP
+     */
     public ArrayList<String> compare(Secret secret, Guess guess) {
         this.result = new ArrayList<>();
         for (int i=0; i<5; i++) {
@@ -79,12 +100,22 @@ public class Jeu {
         return this.result;
     }
 
+    /**
+     * Demande au joueur de rentrer une combinaison
+     * @return
+     *      La combinaison entrée par le joueur
+     */
     public String inputGuess() {
         console.setMessage("Your guess!");
         console.displayMessage(console.getMessage());
         return console.getUserInput();
     }
 
+    /**
+     * Affiche le nombre de BP et de MP en comptant le nombre d'occurence de ces derniers dans la liste
+     * @return
+     *          Un booléen représentant la victoire ou non du joueur
+     */
     public Boolean showResult() {
         int bp = Collections.frequency(this.result, "BP");
         int mp = Collections.frequency(this.result, "MP");
@@ -96,20 +127,38 @@ public class Jeu {
         else return this.win = false;
     }
 
+    /**
+     * Tri le tableau des possibilités et fait appel à la méthode CompareTwo pour comparer les possibilités avec la dernière combinaison jouée, et ne garde que celles
+     * dont les MP et BP sont égales Aux MP et BP de la dernière combinaison jouée.
+     * @param possibilities
+     *          Le tableau des possibilités
+     * @param result
+     *          Le tableau des BP et MP de la dernière combinaison jouée
+     * @param combinaison
+     *          La chaine de caractère de la dernière combinaison jouée
+     */
     public void sortPossibilities(ArrayList<String> possibilities, ArrayList<String> result, String combinaison) {
         int bpR = Integer.parseInt(result.get(0));
         int mpR = Integer.parseInt(result.get(1));
+
         for (int i=0; i<possibilities.size();i++) {
+
             int[] rez = compareTwo(possibilities.get(i), combinaison);
             if(rez[0] != bpR || rez[1] != mpR ){
                 possibilities.remove(i);
-                System.out.println(rez[0]+"   "+rez[1]);
             }
         }
     }
 
-    /* Compare toutes les combinaisons avec la précédente jouée par l'ordinateur,
-       et garde uniquement celles qui ont les mêmes bp/mp que celle jouée */
+    /**
+     * Compare une combinaison avec la dernière jouée par l'ordinateur et renvoie le tableau des BP et MP
+     * @param c
+     *          La combinaison du tableau des possibilités à comparer
+     * @param b
+     *          La dernière combinaison jouée par l'IA
+     * @return
+     *          Le tableau contenant les BP et MP de la comparaison
+     */
     public static int[] compareTwo(String c, String b) {
         int bpCompare = 0;
         int mpCompare = 0;
@@ -129,10 +178,14 @@ public class Jeu {
             }
         }
         int[] tabCompare = {bpCompare, mpCompare};
+
         //Return bp et mp
         return tabCompare ;
     }
 
+    /**
+     * Créé La tableau des possibilités
+     */
     public void createPossibilities() {
         int a = 1;
         int b = 1;
